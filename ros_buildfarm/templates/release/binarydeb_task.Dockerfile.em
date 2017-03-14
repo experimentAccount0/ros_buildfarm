@@ -61,6 +61,9 @@ RUN echo "@today_str"
     os_code_name=os_code_name,
 ))@
 
+# Re: https://github.com/ros-infrastructure/ros_buildfarm/pull/377
+ENV DOCKER_FIX ' '
+
 @(TEMPLATE(
     'snippet/install_dependencies.Dockerfile.em',
     dependencies=dependencies,
